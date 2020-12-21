@@ -32,11 +32,8 @@ const validateCampground = (req, res, next) => {
     const { error } = campgroundSchema.validate(req.body);
     if (error) {
         const msg = error.details.map(el => el.message).join(',');
-        // console.log(msg)
         throw new ExpressError(msg, 400)
-    } else {
-        next()
-    }
+    } else { next() }
 }
 
 app.get('/', (req, res) => {
@@ -53,7 +50,6 @@ app.get('/campgrounds/new', (req, res) => {
 });
 
 app.post('/campgrounds', validateCampground, catchAsync(async (req, res, next) => {
-    // if (!req.body.campground) throw new ExpressError('Invalid Campground Data!', 400);
     const campground = new Campground(req.body.campground);
     await campground.save();
     res.redirect(`/campgrounds/${campground._id}`);
