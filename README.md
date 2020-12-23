@@ -47,6 +47,8 @@ $ npm install
 $ npm start
 ```
 
+### Make sure you have `mongod` process running in background before `npm start`
+
 ## Contributing
 You can add your new features and pull a request, I will sure look into that.
 
