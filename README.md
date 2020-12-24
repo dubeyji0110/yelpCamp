@@ -43,13 +43,22 @@ $ npm install
 
 ### Serving the app
 
+<b>For development purpose</b>
+
 ```sh
 $ npm start
+```
+
+<b>For testing purpose</b>
+
+```sh
+$ npm test
 ```
 
 <b> Make sure you have `mongod` process running in background before `npm start` </b>
 
 ## Contributing
+
 You can add your new features and pull a request, I will sure look into that.
 
 1.  Fork it!
@@ -61,4 +70,4 @@ You can add your new features and pull a request, I will sure look into that.
 
 ## Authors
 
-* **Devansh Dubey** - *Initial work* - [dubeyji0110](https://github.com/dubeyji0110)
+-   **Devansh Dubey** - _Initial work_ - [dubeyji0110](https://github.com/dubeyji0110)
