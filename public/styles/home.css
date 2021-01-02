@@ -1,0 +1,23 @@
+nav.bg-dark{
+    background: transparent !important;
+}
+
+body{
+    background-image: url('https://images.unsplash.com/photo-1471115853179-bb1d604434e0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1918&q=80');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+.spact{
+    color: #fff !important;
+    border-bottom: 0.20rem solid white;
+}
+
+@media (min-width: 750px){
+    .max-vw-70{
+        max-width: 70vw;
+    }
+}

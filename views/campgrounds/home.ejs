@@ -1,4 +1,31 @@
-<% layout('layouts/boilerplate') %> 
-<body>
-    <h1>Home Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YelpCamp</title>
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/home.css">
+</head>
+
+<body class="d-flex vh-100 text-md-center text-white bg-dark">
+    <div class="d-flex max-vw-70 w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto w-100">
+            <%- include('../partials/navbar') %>
+        </header>
+        <main class="px-3">
+            <h1>YelpCamp</h1>
+            <p class="lead">Welcome to YelpCamp! <br> Jump right in and explore our many campgrounds.<br>
+                Feel free to share of your own and review others!</p>
+            <a href="/campgrounds" class="btn btn-lg btn-outline-light fw-bold">View Campgrounds</a>
+        </main>
+        <footer class="mt-auto text-white-50">
+            &copy;2020
+        </footer>
+    </div>
+    <script src="/javascript/popper.min.js"></script>
+    <script src="/javascript/bootstrap.min.js"></script>
 </body>
+
+</html>
