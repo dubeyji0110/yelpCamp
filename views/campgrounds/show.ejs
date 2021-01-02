@@ -50,7 +50,7 @@
         </div>
     </div>
     <div class="col-md-4">
-        <div id='map' style='width: 400px; height: 300px;' class="mb-4"></div>
+        <div id='map' class="mb-4"></div>
         <% if(currentUser) { %>
             <h2>Leave a Review</h2>
             <form action="/campgrounds/<%= campground._id %>/reviews" class="mb-3 validated-form" method="POST"
