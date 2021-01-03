@@ -21,6 +21,18 @@ v8.16.0
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+Create a `.env` file which contains your credentials as:
+
+```sh
+CLOUDINARY_CLOUD_NAME=<your cloudinary name>
+CLOUDINARY_KEY=<your cloudinary key>
+CLOUDINARY_SECRET=<your cloudinary secret>
+
+MAPBOX_TOKEN=<your mapbox token>
+DB_URL=<your mongodb atlas url>
+SECRET=ilovemycrushverymuch
+```
+
 ## Installation
 
 **BEFORE YOU INSTALL:** please read the [prerequisites](#prerequisites)
@@ -45,16 +57,16 @@ $ npm install
 <b>For development purpose</b>
 
 ```sh
-$ npm start
+$ npm development
 ```
 
 <b>For testing purpose</b>
 
 ```sh
-$ npm test
+$ npm start
 ```
 
-<b> Make sure you have `mongod` process running in background before `npm start` or `npm test` </b>
+<b> Make sure you have `mongod` process running in background before `npm start` or `npm development` </b>
 
 ## Contributing
 
