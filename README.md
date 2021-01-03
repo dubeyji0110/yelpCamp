@@ -21,7 +21,7 @@ v8.16.0
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Create a `.env` file which contains your credentials as:
+Create a `.env` file in the root of the folder which contains your credentials as:
 
 ```sh
 CLOUDINARY_CLOUD_NAME=<your cloudinary name>
