@@ -4,8 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "node app.js",
-		"start": "nodemon app.js"
+		"development": "nodemon app.js",
+		"start": "node app.js"
 	},
 	"author": "Devansh Dubey",
 	"license": "ISC",
