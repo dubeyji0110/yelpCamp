@@ -75,7 +75,7 @@ module.exports.updateCampground = async (req, res) => {
 module.exports.deleteCampground = async (req, res) => {
     const { id } = req.params;
     for (let img of req.body.campground.images) {
-        await cloudinary.uploader.destroy(img);
+        await cloudinary.uploader.destroy(img.filename);
     }
     await Campground.findByIdAndDelete(id);
     req.flash('success', 'Successfully deleted a Campground!');
